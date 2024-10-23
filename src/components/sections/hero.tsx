@@ -25,6 +25,8 @@ export const Hero = () => {
             <BlurFade delay={0.3}>
               <div className='mt-6 gap-2 flex justify-center'>
                 <Button
+                  size='lg'
+                  variant='default'
                   className='w-5/6 md:w-1/4 font-bold group/arrow'
                   onClick={() => window.open('/docs', '_blank')}
                 >
@@ -32,8 +34,9 @@ export const Hero = () => {
                   <ChevronRight className='size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform' />
                 </Button>
                 <Button
+                  size='lg'
                   className='w-5/6 md:w-1/4 font-bold group/arrow'
-                  variant='outline'
+                  variant='secondary'
                   onClick={() => {
                     window.open('https://github.com/kinotio/drowser', '_blank')
                   }}
