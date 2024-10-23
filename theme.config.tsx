@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
-import { KinotioLogo } from '@/components/kinotio-logo'
+import { Kinotio } from '@/components/icons/kinotio'
 
 import { getCurrentYear } from '@/lib/utils'
 
@@ -9,7 +9,7 @@ import { DATA } from '@/data'
 
 const config: DocsThemeConfig = {
   logo: function Logo() {
-    return <KinotioLogo width={100} height={100} />
+    return <Kinotio width={100} height={100} />
   },
   project: {
     link: DATA.repo
