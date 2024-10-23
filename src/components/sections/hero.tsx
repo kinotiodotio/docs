@@ -17,7 +17,7 @@ export const Hero = () => {
         <div className='space-y-8'>
           <BlurFade delay={0.1}>
             <div className='mx-auto text-center text-7xl md:text-9xl font-bold'>
-              <h1>Explore our documentations</h1>
+              <h1>Explore our documentation</h1>
             </div>
           </BlurFade>
 
