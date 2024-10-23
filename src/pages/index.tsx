@@ -7,8 +7,11 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Header } from '@/components/common/header'
 import { Footer } from '@/components/common/footer'
 import { Hero } from '@/components/sections/hero'
+import { FAQ } from '@/components/sections/faq'
 
 import { DATA } from '@/data'
+
+import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -52,7 +55,7 @@ export const metadata = {
 export default function Home() {
   return (
     <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-      <div className={inter.className}>
+      <div className={cn([inter.className])}>
         <Head>
           <title>{metadata.title.default}</title>
           <meta name='description' content={metadata.description} />
@@ -76,6 +79,7 @@ export default function Home() {
 
         <Header />
         <Hero />
+        <FAQ />
         <Footer />
       </div>
     </ThemeProvider>
