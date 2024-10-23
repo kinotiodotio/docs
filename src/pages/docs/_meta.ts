@@ -1,5 +1,5 @@
 const meta = {
-  index: 'Documentations',
+  index: 'Welcome',
   drowser: 'Drowser',
   gelda: 'Gelda'
 }

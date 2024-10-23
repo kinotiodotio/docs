@@ -29,7 +29,7 @@ export const Footer = () => {
                 href={contact.href}
                 className='flex gap-2 items-center opacity-60 hover:opacity-100'
               >
-                <Icon name={contact.icon as keyof typeof icons} size={18} />
+                <Icon name={contact.icon as keyof typeof icons} size={20} />
                 {contact.label}
               </Link>
             ))}
