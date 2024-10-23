@@ -51,7 +51,7 @@ export const Header = () => {
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 
         {/* <!-- Desktop --> */}
-        <div className='hidden lg:flex justify-center items-center'>
+        <div className='hidden lg:flex justify-center items-center gap-4'>
           <NavigationMenu className='hidden lg:block mx-auto'>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -68,11 +68,14 @@ export const Header = () => {
 
           <ToggleTheme />
 
-          <Button asChild size='sm' variant='ghost' aria-label='View on GitHub'>
-            <Link aria-label='View on GitHub' href={DATA.repo} target='_blank'>
-              <Github className='size-5' />
-            </Link>
-          </Button>
+          <Link
+            aria-label='View on GitHub'
+            href={DATA.repo}
+            target='_blank'
+            aria-labelledby='View on GitHub'
+          >
+            <Github size={20} />
+          </Link>
         </div>
       </div>
     </header>
