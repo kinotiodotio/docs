@@ -6,8 +6,10 @@ import { ThemeProvider } from '@/components/theme-provider'
 
 import { Header } from '@/components/common/header'
 import { Footer } from '@/components/common/footer'
+
 import { Hero } from '@/components/sections/hero'
 import { FAQ } from '@/components/sections/faq'
+import { Information } from '@/components/sections/information'
 
 import { DATA } from '@/data'
 
@@ -79,6 +81,7 @@ export default function Home() {
 
         <Header />
         <Hero />
+        <Information />
         <FAQ />
         <Footer />
       </div>

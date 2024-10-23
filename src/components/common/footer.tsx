@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer id='footer' className='bg-card border-t border-secondary w-full flex justify-center'>
       <div className='container py-24 sm:py-32 p-10 w-full place-items-stretch'>
-        <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 gap-x-12 gap-y-8 z-50'>
+        <div className='grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8 z-50'>
           <div className='col-span-full xl:col-span-2'>
             <Link href='/' className='flex font-bold items-center'>
               <Kinotio width={100} height={50} />
@@ -31,6 +31,15 @@ export const Footer = () => {
               >
                 <Icon name={contact.icon as keyof typeof icons} size={18} />
                 {contact.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className='flex flex-col gap-2'>
+            <h3 className='font-bold text-lg'>Products</h3>
+            {DATA.footer.products.map((product, idx) => (
+              <Link key={idx} href={product.href} className='opacity-60 hover:opacity-100'>
+                {product.name}
               </Link>
             ))}
           </div>
