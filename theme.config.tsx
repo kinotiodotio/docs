@@ -8,11 +8,6 @@ import { getCurrentYear } from '@/lib/utils'
 import { DATA } from '@/data'
 
 const config: DocsThemeConfig = {
-  useNextSeoProps() {
-    return {
-      titleTemplate: `%s - ${DATA.name}`
-    }
-  },
   darkMode: true,
   logo: function Logo() {
     return <KinotioLogo width={100} height={100} />
