@@ -42,6 +42,20 @@ export const DATA = {
         name: 'FAQ'
       }
     ],
+    products: [
+      {
+        href: '#',
+        name: 'Drowser'
+      },
+      {
+        href: '#',
+        name: 'Drowser Studio'
+      },
+      {
+        href: '#',
+        name: 'Gelda'
+      }
+    ],
     socials: [
       {
         icon: 'Github',
