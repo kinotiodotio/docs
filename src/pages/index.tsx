@@ -77,6 +77,11 @@ export default function Home() {
           <meta name='twitter:card' content={metadata.twitter.card} />
           <meta name='google-site-verification' content={metadata.verification.google} />
           <meta name='yandex-verification' content={metadata.verification.yandex} />
+          <script
+            defer
+            src='https://umami.kinotio.io/script.js'
+            data-website-id='0cad155a-f5b4-4233-90b9-12a46cb5cf28'
+          ></script>
         </Head>
 
         <Header />
