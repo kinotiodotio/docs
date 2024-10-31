@@ -79,7 +79,7 @@ export default function Home() {
           <meta name='yandex-verification' content={metadata.verification.yandex} />
           <script
             defer
-            src='https://umami.kinotio.io/script.js'
+            src='https://analytics.kinotio.io/script.js'
             data-website-id='0cad155a-f5b4-4233-90b9-12a46cb5cf28'
           ></script>
         </Head>
