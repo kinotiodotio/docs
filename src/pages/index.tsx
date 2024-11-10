@@ -80,7 +80,7 @@ export default function Home() {
           <script
             defer
             src='https://analytics.kinotio.io/script.js'
-            data-website-id='8fd071bf-a0ad-4da4-8fb8-cc8d52c18e2d'
+            data-website-id='591968bd-39d8-490a-965f-d8c4c19297b0'
           ></script>
         </Head>
 
