@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
-
 import Head from 'next/head'
+import Script from 'next/script'
 
 import { ThemeProvider } from '@/components/theme-provider'
 
@@ -77,12 +77,13 @@ export default function Home() {
           <meta name='twitter:card' content={metadata.twitter.card} />
           <meta name='google-site-verification' content={metadata.verification.google} />
           <meta name='yandex-verification' content={metadata.verification.yandex} />
-          <script
-            defer
-            src='https://analytics.kinotio.io/script.js'
-            data-website-id='718d3793-a9ba-4478-abd9-595f53028bb8'
-          ></script>
         </Head>
+
+        <Script
+          async
+          src='https://analytics.kinotio.io/script.js'
+          data-website-id='718d3793-a9ba-4478-abd9-595f53028bb8'
+        />
 
         <Header />
         <Hero />
