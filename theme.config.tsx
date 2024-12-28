@@ -1,16 +1,12 @@
-import Link from 'next/link'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 import { Kinotio } from '@/components/icons/kinotio'
-
-import { getCurrentYear } from '@/lib/utils'
+import { Heart } from '@/components/icons/heart'
 
 import { DATA } from '@/data'
 
 const config: DocsThemeConfig = {
-  logo: function Logo() {
-    return <Kinotio width={100} height={100} />
-  },
+  logo: () => <Kinotio width={100} height={100} />,
   project: {
     link: DATA.repo
   },
@@ -20,13 +16,12 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: DATA.doc_repo,
   footer: {
     content: (
-      <span>
-        {`Copyright © ${getCurrentYear()} Developed by `}
-        <Link href={'https://kinotio.io'} target={'_blank'}>
-          Kinotio
-        </Link>
-        .
-      </span>
+      <div className='flex items-center space-x-3 text-gray-400'>
+        <div className='h-6 w-6 opacity-50'>
+          <Heart />
+        </div>
+        <p className='text-sm'>crafted with care and dedication.</p>
+      </div>
     )
   }
 }
