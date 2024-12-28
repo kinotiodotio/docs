@@ -1,7 +1,6 @@
 const meta = {
   index: 'Welcome',
-  drowser: 'Drowser',
-  gelda: 'Gelda'
+  drowser: 'Drowser'
 }
 
 export default meta
