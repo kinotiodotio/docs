@@ -20,9 +20,9 @@ Create a drowser.json in root directory and define some configuration like this:
 }
 ```
 
-## Deno 2
+## Installation
 
-Install npm dependecies on `node_modules` with this command:
+Install dependencies using Deno with this command:
 
 ```sh
 deno install --allow-scripts
@@ -37,47 +37,32 @@ With this test we only test this sample code inside a Chrome ,Firefox but create
 ```ts
 import { driver } from 'https://deno.land/x/drowser@v0.1.6/mod.ts'
 
-driver({ browser: 'chrome' })
-  .then(({ service }) => {
-    service.cases = [
-      {
-        name: 'Verify Failed Title',
-        fn: async ({ builder, assert }) => {
-          const title = await builder.getTitle()
-          assert.assertEquals(title, 'Drowsers')
-        }
-      },
-      {
-        name: 'Verify Title',
-        fn: async ({ builder, assert }) => {
-          const title = await builder.getTitle()
-          assert.assertEquals(title, 'Drowser')
-        }
-      }
-    ]
-  })
-  .catch((error) => console.log(error))
+const testCases = [
+  {
+    name: 'Verify Failed Title',
+    fn: async ({ builder, assert }) => {
+      const title = await builder.getTitle()
+      assert.assertEquals(title, 'Drowsers')
+    }
+  },
+  {
+    name: 'Verify Title',
+    fn: async ({ builder, assert }) => {
+      const title = await builder.getTitle()
+      assert.assertEquals(title, 'Drowser')
+    }
+  }
+]
 
-driver({ browser: 'firefox' })
-  .then(({ service }) => {
-    service.cases = [
-      {
-        name: 'Verify Failed Title',
-        fn: async ({ builder, assert }) => {
-          const title = await builder.getTitle()
-          assert.assertEquals(title, 'Drowsers')
-        }
-      },
-      {
-        name: 'Verify Title',
-        fn: async ({ builder, assert }) => {
-          const title = await builder.getTitle()
-          assert.assertEquals(title, 'Drowser')
-        }
-      }
-    ]
-  })
-  .catch((error) => console.log(error))
+;[('chrome', 'firefox')].forEach((browser) => {
+  driver({ browser })
+    .then(({ service }) => {
+      service.cases = testCases
+    })
+    .catch((error) => {
+      console.error(`Error in ${browser} tests:`, error)
+    })
+})
 ```
 
 ## Report
