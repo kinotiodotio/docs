@@ -53,7 +53,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <ThemeProvider attribute='class' forcedTheme='dark'  disableTransitionOnChange>
+    <ThemeProvider attribute='class' forcedTheme='dark' disableTransitionOnChange>
       <div className={cn('min-h-screen relative overflow-hidden', [inter.className])}>
         <Head>
           <title>{metadata.title.default}</title>
