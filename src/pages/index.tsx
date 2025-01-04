@@ -78,8 +78,8 @@ export default function Home() {
 
         <Script
           async
-          src='https://analytics.kinotio.io/script.js'
-          data-website-id='718d3793-a9ba-4478-abd9-595f53028bb8'
+          src='https://umami.kinotio.io/script.js'
+          data-website-id='b74460b2-21dd-46e9-b311-2250008a74bb'
         />
 
         <Header />
