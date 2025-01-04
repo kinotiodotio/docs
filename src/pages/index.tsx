@@ -1,12 +1,7 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Script from 'next/script'
-import Link from 'next/link'
-
 import { ThemeProvider } from '@/components/theme-provider'
-
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 
 import { DATA } from '@/data'
 
@@ -81,31 +76,6 @@ export default function Home() {
           src='https://umami.kinotio.io/script.js'
           data-website-id='b74460b2-21dd-46e9-b311-2250008a74bb'
         />
-
-        <Header />
-        <main className='min-h-screen'>
-          <section className='container mx-auto px-4 py-20 min-h-screen flex flex-col justify-center'>
-            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-white to-blue-500 rounded-full filter blur-3xl opacity-10 animate-pulse'></div>
-            <div className='max-w-6xl space-y-8'>
-              <div className='space-y-6'>
-                <h1 className='text-4xl font-medium text-white md:text-5xl lg:text-6xl'>
-                  This platform is dedicated to providing detailed documentation about our products,
-                  offering users and developers the necessary insights and guidance to effectively
-                  engage with and contribute to our ecosystem.
-                </h1>
-              </div>
-              <div>
-                <p className='text-white'>
-                  If you&apos;re passionate about open-source development, you should{' '}
-                  <Link href='/join' className='underline hover:text-gray-300'>
-                    join us and contribute!
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </section>
-        </main>
-        <Footer />
       </div>
     </ThemeProvider>
   )

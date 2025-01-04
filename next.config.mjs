@@ -6,6 +6,16 @@ const withNextra = nextra({
   themeConfig: './theme.config.tsx'
 })
 
-const nextConfig = {}
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/docs',
+        permanent: true
+      }
+    ]
+  }
+}
 
 export default withNextra(nextConfig)
