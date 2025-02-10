@@ -3,7 +3,8 @@ const meta = {
   'configuration': 'Configuration',
   'usage': 'Usage',
   'report-structure': 'Report Structure',
-  'features': 'Features'
+  'features': 'Features',
+  'changelog': 'Changelog'
 }
 
 export default meta
