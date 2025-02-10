@@ -1,0 +1,37 @@
+# Usage
+
+In test file , Define a sample test like this:
+
+With this test we only test this sample code inside a Chrome ,Firefox but create a test for another web browser like Edge, Safari 🚀
+
+```ts
+import { driver } from 'https://deno.land/x/drowser@v0.1.6/mod.ts'
+
+const browsers = ['chrome', 'firefox']
+const testCases = [
+  {
+    name: 'Verify Failed Title',
+    fn: async ({ builder, assert }) => {
+      const title = await builder.getTitle()
+      assert.assertEquals(title, 'Drowsers')
+    }
+  },
+  {
+    name: 'Verify Title',
+    fn: async ({ builder, assert }) => {
+      const title = await builder.getTitle()
+      assert.assertEquals(title, 'Drowser')
+    }
+  }
+]
+
+for (const browser of browsers) {
+  try {
+    const { service } = await driver({ browser })
+    service.cases = testCases
+  } catch (error) {
+    console.error(`Error in ${browser} tests:`, error)
+    // Consider adding proper error reporting here
+  }
+}
+```
