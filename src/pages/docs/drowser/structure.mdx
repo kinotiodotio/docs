@@ -1,70 +1,4 @@
-# Drowser
-
-A easy way to implement and write Selenium with TypeScript using Deno 🦕
-
-## Features
-
-- Easy handling on driver side web browser to isolate each test ✅.
-- Get a daily log file to check all test process if passed or failed ✅.
-- Export each test case inside the reports ✅.
-
-## Configuration
-
-Create a drowser.json in root directory and define some configuration like this:
-
-- `url`: The url of platform or website that need to be test
-
-```json
-{
-  "url": "http://url_of_the_platform_need_to_be_tested"
-}
-```
-
-## Installation
-
-Install dependencies using Deno with this command:
-
-```sh
-deno install --allow-scripts
-```
-
-## Usage
-
-In test file , Define a sample test like this:
-
-With this test we only test this sample code inside a Chrome ,Firefox but create a test for another web browser like Edge, Safari 🚀
-
-```ts
-import { driver } from 'https://deno.land/x/drowser@v0.1.6/mod.ts'
-
-const browsers = ['chrome', 'firefox']
-const testCases = [
-  {
-    name: 'Verify Failed Title',
-    fn: async ({ builder, assert }) => {
-      const title = await builder.getTitle()
-      assert.assertEquals(title, 'Drowsers')
-    }
-  },
-  {
-    name: 'Verify Title',
-    fn: async ({ builder, assert }) => {
-      const title = await builder.getTitle()
-      assert.assertEquals(title, 'Drowser')
-    }
-  }
-]
-
-for (const browser of browsers) {
-  try {
-    const { service } = await driver({ browser })
-    service.cases = testCases
-  } catch (error) {
-    console.error(`Error in ${browser} tests:`, error)
-    // Consider adding proper error reporting here
-  }
-}
-```
+# Structure
 
 ## Report
 
@@ -113,4 +47,4 @@ For more details on how to use [Drowser Studio](https://drowser.kinotio.io/), re
     - **Browser**: The browser used for the test execution.
 
 - **Metadata**: Additional information about the test execution.
-  - **Current Month**: The current month of the test execution.
+  - **Cur
