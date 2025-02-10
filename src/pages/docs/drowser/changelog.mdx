@@ -1,0 +1,128 @@
+# Changelog
+
+## v0.1.6
+
+What's Changed
+	- feat: specify a version constraint for the specifier selenium webdriver 
+	- feat: update deno json lib name and license 
+	- feat: upgrade version to v0.1.6 
+
+## v0.1.5
+
+What's Changed
+	- docs: update readme docs 
+	- feat: use deno std 0.224.0 for path mod 
+	- feat: update logo banner 
+	- feat: update owner name
+	- docs: update readme
+	- feat: create unit test for utils 
+	- feat: add run tests on build workflow 
+	- feat: impl unit test for get timestamp utils 
+	- feat: impl test for generate filename 
+	- feat: implement test for get current month 
+	- feat: move test inside mod_test 
+	- feat: export service case params type from mod and update lib version 
+
+## v0.1.4
+
+What's Changed
+	- feat: update readme docs 
+	- feat: drop aliases on import map and move on deps for deno relative path problems
+	- feat: update version to v0.1.4
+
+## v0.1.3
+
+What's Changed
+	- feat: use promise all settled to handle non blocking on running process
+	- feat: add build gh workflow
+	- feat: update version to v0.1.3 and update readme
+
+## v0.1.2
+
+What's Changed
+	- feat: add actual and exceptation to be added to log and pdf export 	
+	- feat: import openai 
+	- feat: impl json config for drowser and export push all cases history inside reports json
+	- feat: rename browser type to be simple as browser on driver params
+	- docs: update readme
+	- chore: rename some type and constants
+	- feat: use constant for case status
+	- feat: use nanoid for identify each case and task case
+	- feat: use passed or failed for case status
+	- feat: use avg duration and coverage to be number
+	- feat: run flaky test on driver and push to json reports
+	- feat: push results count to month key on metric
+	- feat: use sample of data set to metrics
+	- feat: populate metrics data
+	- feat: export data in month for graphs
+	- feat: push dynamic data to the metric graphs 
+	- feat: update data graph by current month of test 
+	- feat: calcute total test effecttued , passed , failed , avg duration, coverage and flaky test
+	- feat: add broswer to each result and update combined grp by sts to be from combined total test array
+	- feat: add firefox in basic test and show on log completed type of browser
+	- feat: add browser type in each case
+	- feat: handle custom test fn and stringify source code 
+	- feat: add type of test in result and export always on success or error
+	- feat: migrate flaky runner to in runner file
+	- feat: remove flaky runner and use directly results for main core cases 
+	- feat: import assert from deno std lib 
+	- feat: drop object type case and use only function 
+	- docs: update readme doc
+	- feat: set case as null if not defined and update doc about url config 
+	- chore: clean deps remove node-fs from import map 
+	- feat: upgrade deno json version to 0.1.2 
+
+## v0.1.1
+
+What's Changed
+	- docs: update docs, don't use hard tabs on readme
+	- feat: migrate export log , pdf to be at drowser json config
+	- feat: update return type of driver and check on finally to generate log or pdf
+	- docs: update readme with dots
+	- feat: handle builder inside driver core and get only json of test or function 
+	- chore: rename lib to be mod 
+	- feat: install kya and show loading spinner while running test and failed test 
+	- feat: handle selenium webdriver errors 
+	- feat: handle log on each level of test 
+	- feat: get results from each test to be in array of results with test status 
+	- feat: use chrome driver only on basic examples 
+	- feat: create log file and write each row of test passed or failed
+	- test assert functions by 
+	- fix: fix some types with assert function and use global func for getting result 
+	- feat: set export log to default a true and remove from json config 
+	- feat: generate pdf from results and install pdf-lib 
+	- feat: handle creating pdf reports and check if has result before doing the process 
+	- fix: import deps on export file 	
+	- feat: dont create log file if it's already exist 
+	- feat: create src folder and move all codebase inside 
+	- docs: update readme doc about information about new feature and actual things they can use
+	- feat: update object type for service case and update doc readme 
+	- docs: update readme doc 
+	- feat: set version to v0.1.1
+
+## v0.1.0
+
+What's Changed  
+	- docs: update docs to add logo banner  
+	- docs: remove heading  
+	- feat: add prettierrc json config and update git ignore  
+	- feat: add import map  
+	- docs: use contributing and code of conduct  
+	- feat: install selenium webdriver and std assert on deps  
+	- feat: configure deno.json use fmt, lint, compiler options  
+	- chore: delete tsconfig  
+	- feat: create browser engines, types, constants  
+	- feat: create gh workflows to auto create pull request  
+	- feat: add edge to browser enginer and remove utils folder from import maps  
+	- feat: re-arch pkg to be drowser and clean file, dir  
+	- feat: handle drowser json config and validate url  
+	- feat: handle new promise execution for driver and return as value driver from selenium
+	- chore: clean lib and move basic example to examples folder  
+	- feat: create pkg types and handle builder quit outside the pkg for now  
+	- feat: create service type, obj to set extra services for pkg and create types  
+	- docs: update readme docs  
+	- docs: update readme docs  
+	- docs: update readme docs  
+	- feat: set version to v0.1.0  
+	- fix: for todo specify builder.quit to be able to quit internaly  
+
