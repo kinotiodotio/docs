@@ -6,6 +6,9 @@ import { Heart } from '@/components/icons/heart'
 import { DATA } from '@/data'
 
 const config: DocsThemeConfig = {
+  color: {
+    hue: 25
+  },
   logo: () => <Kinotio width={125} height={125} />,
   project: {
     link: DATA.repo

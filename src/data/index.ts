@@ -12,15 +12,5 @@ export const DATA = {
   },
   repo: 'https://github.com/kinotiodotio/docs',
   doc_repo: 'https://github.com/kinotiodotio/docs/tree/main',
-  keywords: ['Open Source', 'Documentation', 'API', 'Guides', 'Tutorials'],
-  color: {
-    gradient: {
-      from: '#6048e7',
-      to: '#56d49e'
-    },
-    base: {
-      dark: '#000000',
-      light: '#ffffff'
-    }
-  }
+  keywords: ['Open Source', 'Documentation', 'API', 'Guides', 'Tutorials']
 }
