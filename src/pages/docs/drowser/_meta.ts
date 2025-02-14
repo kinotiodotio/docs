@@ -1,10 +1,11 @@
 const meta = {
-  'index': 'Installation',
-  'configuration': 'Configuration',
-  'usage': 'Usage',
-  'report-structure': 'Report Structure',
-  'features': 'Features',
-  'changelog': 'Changelog'
+  index: 'Installation',
+  configuration: 'Configuration',
+  usage: 'Usage',
+  structure: 'Structure',
+  features: 'Features',
+  roadmap: 'Roadmap',
+  changelog: 'Changelog'
 }
 
 export default meta
